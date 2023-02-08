@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homework05</title>
+    </head>
+    <body>
+        <h1>Homework05</h1>
+
+        <h3>
+            Exercise 1: <br><br>
+
+            Create 3 object templates. Academy, Student and Subject. The structure should be: Academy<br><br>
+
+            Name - string<br>
+            Students - array of Students<br>
+            Subjects - array of Subjects<br>
+            Start - Date when it starts<br>
+            End - Date when it ends<br>
+            NumberOfClasses - number of subjects * 10, not settable<br>
+            PrintStudents - method that prints all students in console<br>
+            PrintSubjects - method that prints all subjects in console<br>
+            <br>
+            Subject<br>
+            <br>
+            Title - string<br>
+            NumberOfClasses - default 10, not settable<br>
+            isElective - boolean<br>
+            Academy - Academy object<br>
+            Students - array of Students<br>
+            OverrideClasses - accepts a number and rewrites the NumberOfClasses property with that number. The number can't be smaller than 3.<br>
+            <br>
+            Student<br>
+            <br>
+            FirstName - string<br>
+            LastName - string<br>
+            Age - number<br>
+            CompletedSubjects - emptyArray as default, not settable<br>
+            Academy - null as default, not settable<br>
+            CurrentSubject - null as default, not settable<br>
+            StartAcademy - accepts Academy object that it sets to the Academy property of the student<br>
+            StartSubject - accepts Subject object and adds it to the CurrentSubject property but only if the student has an Academy object in the Academy property and that subject exists in the academy. If not, give error in console and do not set the CurrentSubject property<br><br>
+        </h3>
+
+        <h3>
+            Exercise 2:<br>
+            <br>
+            Make the functions StartAcademy and StartSubject dynamic.<br>
+            <br>
+            StartAcademy - When the student calls StartAcademy, the student should also be added to the Academy property Students ( The academy that he is starting )<br>
+            StartSubject - When the student calls StartSubject the student should also be added to the Subject property Students ( The subject that he is starting ). If there was another subject in the CurrentSubject property, that subject should be transferred to CompletedSubjects and then add the new Subject
+        </h3>
+
+
+        <script src="./JS/script.js"></script>
+    </body>
+</html>
